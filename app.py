@@ -8,7 +8,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.ensemble import RandomForestClassifier
 st.title('Credit Card Default Classification App')
 st.subheader('This app uses some input parameters to predict whether a person will default on his credit card payment.')
-data = pd.read_csv('Data/CreditCardDefault_Classification.csv')
+data = pd.read_csv('CreditCardDefault_Classification.csv')
 st.write('Input Data should be in the form:')
 inp = data.drop('def_flag', axis=1)
 st.dataframe(inp.sample(1))
